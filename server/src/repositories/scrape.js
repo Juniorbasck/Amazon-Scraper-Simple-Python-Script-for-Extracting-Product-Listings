@@ -19,7 +19,7 @@ const scrapeAmazon = async (keyword) => {
     const products = [];
 
     productElements.forEach((productElement) => {
-      const titleElement = productElement.querySelector('span.a-size-medium');
+      const titleElement = productElement.querySelector('span.a-size-base-plus');
       const ratingElement = productElement.querySelector('span.a-icon-alt');
       const reviewsElement = productElement.querySelector('span.a-size-base');
       const imageElement = productElement.querySelector('img');
