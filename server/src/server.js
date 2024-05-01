@@ -5,8 +5,7 @@ import appRouter from "./Routes/productsRoutes.js"
 dotenv.config();
 const app = express();  
 
-
-app.use("api/scrape", appRouter)
+app.use("/api/scrape", appRouter)
 
 const PORT = process.env.PORT || 5000;
 
