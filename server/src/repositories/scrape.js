@@ -1,13 +1,16 @@
 import axios from "axios";
-import JSDOM from "jsdom"
+import { JSDOM } from 'jsdom';
 
 const scrapeAmazon = async (keyword) => {
   try {
-    const url = `https://www.amazon.com/s?k=${encodeURIComponent(keyword)}`;
+    const url = `https://www.amazon.com.br/s?k=${encodeURIComponent(keyword)}`;
     console.log(url);
-    const response = await axios.get(url);
-    const { data } = response;
-
+    const { data } = await axios.get(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+        }
+      });
+      
     const dom = new JSDOM(data);
     const document = dom.window.document;
 
