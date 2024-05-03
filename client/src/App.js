@@ -1,13 +1,16 @@
 import React from 'react';
 import Header from './components/Header';
-import MainPage from './components/mainPage'
+import SearchPage from './components/SearchPage'
+import Footer from './components/Footer'
+import Product from './components/Products';
 
 function App() {
   return (
-    <div className="App">
+      <div className="flex flex-col min-h-screen">  
       <Header />
-      <MainPage />
-    </div>
+      <SearchPage className="flex-1" />
+      <Product />
+  </div>
   );
 }
 
