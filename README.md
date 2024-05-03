@@ -46,8 +46,6 @@ I took the liberty of using the React library in the front-end together with Tai
 
 ## API documentation
 
-#### Retorna todos os itens
-
 ```http
   GET http://localhost:5000/api/scrape?keyword=${keyword}
 ```
