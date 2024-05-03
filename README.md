@@ -20,6 +20,8 @@ I took the liberty of using the React library in the front-end together with Tai
 
  - You need to have node.js instaled in your system: version 21.7.1 
 ---
+
+after cloning the repository..
  
  ### Install the back-end dependences
 
